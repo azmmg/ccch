@@ -1,0 +1,43 @@
+body {
+  background:#f4f1de;
+  color:#3d405b;
+}
+.card, .list-group {
+  color:#555;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.inf {font-size:110%}
+.spacer {height:1.6em;} 
+body {
+  padding-top: 3.5rem;
+}
+p.list-body {
+  margin-top:-0.75em
+}
+p.list-heading {
+  font-weight:bold;
+}
+.cntrd {text-align:center}
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0; }
+hr.lblu {
+  border-color: #017cc2;
+}
+.content-chunk {
+  background: white;
+  color:#444;
+  padding:2em
+}
