@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NDJT8PF');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="description" content="Sind Farben geometrische Objekte? Kann man mit Farben rechnen? Unser Blogbeitrag zeigt Ihnen, wie es sich damit verhält." id="meta_description">
+    <title>Die Geometrie der Farben</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/blog.css" rel="stylesheet">
+    <link href="./css/template.css" rel="stylesheet">
+    <style id="page_specific_style">
+      pre,
+      code {
+        font-size: 10pt;
+        color: brown;
+        padding: 0;
+        margin: 0
+      }
+      .cspan {
+        padding-left: .25em;
+        padding-right: .25em;
+      }
+      .kursiv {
+        font-style: italic
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 1px solid #777;
+        padding: 2px;
+      }
+
+      .imgcapt {
+        font-size: 75%;
+      }
+      figcaption {
+        padding-left: 2.4em;
+        font-style: italic;
+      }
+      blockquote {
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .old {
+        font-style: italic;
+        color: #999
+      }
+      .palitem {
+        width: 24em;
+        padding: .5em;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14pt;
+      }
+      .dark {color: #ccc;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDJT8PF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <a class="text-muted" href="index.html">Home</a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href="#">Farbige Daten</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false">
+                <title>Search</title>
+                <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                <path d="M21 21l-5.2-5.2"></path>
+              </svg>
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+          </div>
+        </div>
+      </header>
+      <a aria-label="top" id="TOP"></a>
+      <div class="row mb-2" id="teaserrow">
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Daten</strong>
+              <h3 class="mb-0">Speisekarten-Analyse</h3>
+              <div class="mb-1 text-muted">18. Dezember</div>
+              <p class="card-text mb-auto">Daten aus Restaurant-Menus zu extrahieren ist gar nicht so einfach. Das Format &laquo;PDF&raquo; stellt sich gerne quer.</p>
+              <a href="blogpost-20231218-1.html" class="stretched-link">Weiterlesen</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="images/restaurant-menu.jpg" alt="Speisekarte eines Restaurants"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Daten</strong>
+              <h3 class="mb-0">Fotos nutzen</h3>
+              <div class="mb-1 text-muted">24. August</div>
+              <p class="card-text mb-auto">Data Mining mit dem Smartphone: Ihr Fotoarchiv kann eine reichhaltige Datenquelle sein. Nutzen Sie es!</p>
+              <a href="blogpost-20230824-1.html" class="stretched-link">Weiterlesen</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="images/Apfel.jpg" alt="teaser image 1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-4 mb-4 font-italic border-bottom"> Die neuesten Beiträge </h3>
+          <h2 class="blog-post-title">Die Geometrie der Farben</h2>
+          <p class="blog-post-meta">8. September 2023 <a href="#">Mike</a>
+          </p>
+          <h4>Farben als Vektoren</h4>
+          <p>Die verbreitete Codierung von Farben als Hex-Zahlen beruht auf dem RGB-Farbmodell und ist 1 zu 1 in RGB übersetzbar: <span class="cspan" style="background-color: #0ff">&nbsp; Cyan: #00FFFF - rgb(0,255,255) &nbsp;</span>.</p>
+          <p>Wer seine Schulmathematik noch nicht völlig vergessen hat, erkennt unschwer, dass es sich bei dem Klammerausdruck um einen Vektor handelt; seine Komponenten sind <span class="cspan" style="background-color: #f00">r (rot)</span>, <span class="cspan" style="background-color: #0f0">g (grün)</span> und <span class="cspan" style="background-color: #00f; color: #fff">b (blau)</span>. Der Wertebereich ersteckt sich bei jeder Komponente von 0 bis 255, so dass in diesem Modell 16'777'216 (~16.8 Millionen) Farbwerte unterschieden werden können.</p>
+          <div>
+            <figure>
+              <img src="./images/farben-als-vektoren.png" alt="Farben können als Vektoren dargestellt werden" width="720">
+              <figcaption>Grafik: Jeder Farbwert kann als Vektor im Farbraum betrachtet werden</figcaption>
+            </figure>
+
+          </div>
+          <p>Geometrisch können wir einzelne Farbwerte als Punkte im Inneren oder an der Oberfläche eines Würfels mit der Kantenlänge 256 verorten. Die Eckpunkte des Würfels bilden die Farbwerte Schwarz, Weiss, Rot, Grün, Blau, Gelb, Magenta und Cyan. Alle Graustufen liegen auf der Geraden, die von Schwarz (rgb(0,0,0)) nach Weiss (rgb(255,255,255)) führt.</p>
+          <p></p>
+          <h4>Mit Farben rechnen</h4>
+          <p>Wenn Farben Vektoren sind, dann können wir sie auch zu Berechnungen heranziehen. Komponentenweise addiert ergibt <span class="cspan" style="background-color: rgb(25,25,112); color: rgb(255,255,255)">midnight blue #191970</span> plus <span class="cspan" style="background-color: rgb(34,139,34); color: rgb(0,0,0)">forest green #228B22</span> etwas wie Cyan: <span class="cspan" style="background-color: rgb(59,164,146)">#3BA492</span>. Das funktioniert allerdings nur solange, wie die jeweilige Summe der Komponenten unter 256 bleibt. Es ist also keine nützliche Anwendung der Vektorrechnung.</p>
+          <p>Anders sieht es aus, wenn wir herausfinden wollen, wie wir eine bestimmte Farbe benennen sollen. Es gibt keine 16.8 Millionen Farbbezeichnungen, und so gruppieren wir Farbwerte am besten um diejenigen, die tatsächlich einen Namen haben. Dafür berechnen wir zu einem gegeben Farbwert die kartesische Distanz zu den benannten Farben und wählen diejenige aus, bei der diese Distanz am kürzesten ist.</p>
+          <p>So finden wir für den namenlosen Farbwert <span class="cspan" style="background-color: #F0C0C0; color: rgb(0,0,0)">#F0C0C0</span> als nächstgelegenen benannten Wert <span class="cspan" style="background-color: #F08080; color: rgb(0,0,0)">light coral #F08080</span>. Diese Art der Berechnung wird verwendet, um beispielsweise die dominanten Farben eines Bildes zu identifizieren und zum errechneten Farbwert auch einen Namen zuzufügen.</p>
+          <p>Aus dem bekannten van Gogh-Gemälde &laquo;Cabanes blanches aux Saintes-Maries&raquo; (1888; <a href="https://www.kunsthaus.ch/sammlung/impressionismus/" target="_blank">ausgestellt im Kunsthaus Zürich</a>) lassen sich folgende dominante Farbwerte extrahieren (NNC = &laquo;Nearest Named Color&raquo;):
+          <div id="colorlist">
+          <div data-rgb="49,73,45" class="palitem dark" style="background-color: rgb(49, 73, 45);">Hex #31492d rgb(49,73,45)<br>NNC: (47,79,47 - Dark Green)</div>
+          <div data-rgb="162,99,14" class="palitem dark" style="background-color: rgb(162, 99, 14);">Hex #a2630e rgb(162,99,14)<br>NNC: (139,101,8 - DarkGoldenrod4)</div>
+          <div data-rgb="13,74,124" class="palitem dark" style="background-color: rgb(13, 74, 124);">Hex #0d4a7c rgb(13,74,124)<br>NNC: (16,78,139 - DodgerBlue4)</div>
+          <div data-rgb="12,118,187" class="palitem dark" style="background-color: rgb(12, 118, 187);">Hex #0c76bb rgb(12,118,187)<br>NNC: (24,116,205 - DodgerBlue3)</div>
+          <div data-rgb="204,208,190" class="palitem bright" style="background-color: rgb(204, 208, 190);">Hex #ccd0be rgb(204,208,190)<br>NNC: (205,205,193 - ivory3)</div>
+        </div>
+          <p>Die Ermittlung der dominanten Farben in einem Bild erfolgt normalerweise mit einem <a href="/wissen/was-ist-clustering.html">Clustering</a>-Algorithmus, ist also aufwändiger als das Finden des nächstgelegen Farbnamens.</p>
+          <p>Die dominanten Farben können bei grösseren Bildbeständen dazu herangezogen werden, Bilder in Gruppen einzuteilen und so Bilder mit ähnlichen Eigenschaften zusammenzuführen. Eine der frühesten Anwendung dieser Methode war das Auffinden von Nacktfotos beim Upload auf Online-Plattformen. Als Kriterium diente dabei das gehäufte Auftreten von Hautfarben in einem Bild.</p>
+          <h4>Farbpaletten</h4>
+          <p>Eine häufig verwendete praktische Anwendung des Farben-Clustering ist die Palettenextraktion: aus einem Bild werden diejenigen Farbwerte extrahiert, die am häufigsten vorkommen. Dabei können die einzelnen Farbwerte ungruppiert bleiben, was jedoch zu langen, unübersichtlichen Listen führen kann. Beim Clustering hingegegen wird das Ergebnis auf eine überschaubare Zahl reduziert. Das kann über mehrere Stufen erfolgen: Zunächst gruppieren wir die im Bild gefundenen Farbwerte um die Farben, die einen Namen haben, und schliesslich gruppieren wir diese nach "warme Farben" - "kühle Farben" oder "satte Farben" - "blasse Farben" oder auch nach "Rottöne" - "Blautöne" - "Grüntöne" ...</p>
+          <p>Es gibt neben RGB noch verschiedene andere Farbräume, etwa CMYK für den Druck von Farbe auf Papier. Im Zusammenhang mit der Palettenextraktion besonders interessant ist HSL (Hue Saturation Lightness). In HSL werden der Farbton als Winkel, die Sättigung und die Helligkeit hingegen als Prozent des Maximalwerts angegeben. Es ist möglich RGB in HSL umzurechnen. So erhält man etwa aus dem RGB-Hex-Wert #A2630E hsl(34, 84%, 35%). Das Schöne an HSL ist, dass man nun ganz leicht die Komplementärfarbe zu einem Farbwert finden kann: man addiert zum Farbton einfach den Winkel 180&deg;. So wird aus <span class="cspan" style="background-color: #A2630E; color: rgb(0,0,0)">hsl(34, 84%, 35%)</span> 🠚 <span class="cspan" style="background-color: #0E4FA4; color: rgb(0,0,0)">hsl(214, 84%, 35%)</span> und das entspricht Hex #0E4FA4.</p>
+          <p>Durch zweimalige Addition des Winkels 120&deg; erhält man eine Farbtriade: <span class="cspan" style="background-color: #0D4A7C; color: rgb(255,255,255)">#0D4A7C hsl(207, 81%, 27%)</span> 🠚 <span class="cspan" style="background-color: #7C0D4A; color: rgb(255,255,255)">#7C0D4A hsl(327, 81%, 27%)</span> 🠚 <span class="cspan" style="background-color: #4A7C0D; color: rgb(0,0,0)">#4A7C0D hsl(87, 81%, 27%)</span>. Auf diese Weise kann man ganze Farbpaletten transformieren.</p>
+
+        </div>
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">Kontakt</h4>
+            <p class="mb-0">Calya Consult GmbH <br>6300 Zug, Schweiz <br>Telefon +41 41 743 09 09 </p>
+          </div>
+          <div class="p-4">
+            <h4 class="font-italic">Archiv</h4>
+            <ol class="list-unstyled mb-0">
+              <li class="archli">
+                <a href="blogpost-20230824-1.html">blogpost-20230824-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20221129-1.html">blogpost-20221129-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20221104-1.html">blogpost-20221104-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20220923-1.html">blogpost-20220923-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20220903-1.html">blogpost-20220903-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20220712-1.html">blogpost-20220712-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20220707-1.html">blogpost-20220707-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20220525-1.html">blogpost-20220525-1.html</a>
+              </li>
+              <li>
+                <a href="september-2020.html">September 2020</a>
+              </li>
+              <li>
+                <a href="august-2020.html">August 2020</a>
+              </li>
+            </ol>
+          </div>
+          <div class="p-4">
+            <h4 class="font-italic">Anderswo</h4>
+            <ol class="list-unstyled">
+              <li>
+                <a href="#">GitHub</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+            </ol>
+          </div>
+        </aside>
+        <!-- /.blog-sidebar -->
+      </div>
+      <!-- /.row -->
+    </main>
+    <!-- /.container -->
+    <footer class="blog-footer">
+      <p class=".big">Blog by <a href="https://calyaconsult.ch">Calya Consult GmbH</a>
+      </p>
+      <p></p>
+      <p>
+        <a href="#TOP">Back to top</a>
+      </p>
+    </footer>
+  </body>
+</html>

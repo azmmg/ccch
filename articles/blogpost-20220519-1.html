@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NDJT8PF');</script>
+<!-- End Google Tag Manager -->
+<meta name="description" content="Ein Datenbankserver für den internen Gebrauch lässt sich für wenig Geld selbst bauen und einrichten." id="meta_description">
+<title>Datenbankserver im Eigenbau</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/blog.css" rel="stylesheet">
+<link href="./css/template.css" rel="stylesheet">
+<style id="page_specific_style">
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDJT8PF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="container">
+<header class="blog-header py-3">
+<div class="row flex-nowrap justify-content-between align-items-center">
+<div class="col-4 pt-1">
+<a class="text-muted" href="index.html">Home</a>
+</div>
+<div class="col-4 text-center">
+<a class="blog-header-logo text-dark" href="#">Technik</a>
+</div>
+<div class="col-4 d-flex justify-content-end align-items-center">
+<a class="text-muted" href="#" aria-label="Search">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false">
+<title>Search</title>
+<circle cx="10.5" cy="10.5" r="7.5"></circle>
+<path d="M21 21l-5.2-5.2"></path>
+</svg>
+</a>
+<a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+</div>
+</div>
+</header>
+<a aria-label="top" id="TOP"></a>
+<div class="row mb-2" id="teaserrow">
+<div class="col-md-6">
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+<div class="col p-4 d-flex flex-column position-static">
+<strong class="d-inline-block mb-2 text-primary">Wechselkurs</strong>
+<h3 class="mb-0">Den Euro beobachten</h3>
+<div class="mb-1 text-muted">25. Mai</div>
+<p class="card-text mb-auto">Das Auf und Ab des Devisenkurses mit einem selbst gebauten Ticker beobachten</p>
+<a href="blogpost-20220525-1.html" class="stretched-link">Weiterlesen</a>
+</div>
+<div class="col-auto d-none d-lg-block">
+<img src="images/eur-chf.png" alt="teaser image 1">
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+<div class="col p-4 d-flex flex-column position-static">
+<strong class="d-inline-block mb-2 text-primary">Daten</strong>
+<h3 class="mb-0">Dashboards einfach, aber nützlich</h3>
+<div class="mb-1 text-muted">2. Sep</div>
+<p class="card-text mb-auto">Ein so genanntes "Dashboard" soll den Überblick erleichtern. Es ist gar nicht so schwer, eines einzurichten</p>
+<a href="blogpost-20200902-1.html" class="stretched-link">Weiterlesen</a>
+</div>
+<div class="col-auto d-none d-lg-block">
+<img src="images/Beispielbild-2.png" alt="teaser image 2">
+</div>
+</div>
+</div>
+</div>
+</div>
+<main class="container">
+<div class="row">
+<div class="col-md-8 blog-main">
+<h3 class="pb-4 mb-4 font-italic border-bottom">
+Die neuesten Beiträge
+</h3>
+<h2 class="blog-post-title">Datenbankserver für wenig Geld</h2> <p class="blog-post-meta">19. Mai 2022 <a href="#">Mike</a></p>
+<p>Mysql-Datenbanken sind in den meisten Web-Hostings inbegriffen und kosten nichts extra. Warum also einen eigenen Datenbankserver einrichten?</p><p>Es gibt drei wichtige Gründe, die Datenbank im Hause zu behalten:</p><ul><li>Die Daten werden nur zur Entwicklung von Produkten oder Services gebraucht, und es besteht kein zwingender Grund, sie ausser Haus zu geben.</li><li>Die Datenbank dient der Absicherung der Daten, die beim Hoster liegen.</li><li>Die Datenbank enthält personenbezogene oder sonstwie vertrauliche Daten, die nichts auf einem öffentlich zugänglichen Server verloren haben.</li></ul><p>Wenn wir uns einmal dafür entschieden haben, die Datenbank im Haus zu behalten, stellt sich als nächstes die Frage: Wo hosten wir sie?</p><p>Hier habe ich mich für den Eigenbau eines kleinen Servers entschieden, der wenig kostet und genau die Leistung erbringt, die er soll.</p><h3>Die Hardware:</h3><ul><li>Ein Motherboard Asus J1900I-C mit integriertem 4-Kern Celeron-Prozessor (https://www.asus.com/Commercial-Motherboard/J1900IC/specifications/)</li><li>8GB DDR3 RAM. Wichtig: Der Speicherriegel muss mit 1,35 Volt arbeiten und nicht mit 1,5 Volt!</li><li>Eine 240 GB SSD von Kingston</li><li>Ein altes PC-Gehäuse mit Formfaktor ATX</li></ul><p>Zusammenbau: Motherboard im Gehäuse verschrauben und ans Netzteil anschliessen. RAM ins Motherboard stecken, SSD ins Gehäuse schrauben und mit Netzteil und Motherboard verbinden. Gehäuse zu, fertig.</p><p>Kosten: 175 EUR</p><ul><li>Motherboard: 99 EUR</li><li>RAM: 34 EUR</li><li>SSD: 42 EUR</li></ul><h2>Die Software:</h2><ul><li>Betriebssystem Alpine Linux (https://www.alpinelinux.org)</li><li>Docker (https://docker.com)</li><li>Ein LAMP Stack mit PHP, Apache, MySQL und phpMyAdmin der in Docker Containern läuft (https://github.com/sprintcube/docker-compose-lamp)</li></ul><p>Die Installation geht rasch vonstatten: Zunächst wird ein bootbarer USB-Stick mit dem Alpine-Linux erstellt, dann damit gebootet, das Betriebssystem, SSH, Git und anschliessend Docker und Docker Composer installiert.</p><p>Der Server ist für den "headless" Betrieb konzipert, das heisst, er hat kein GUI, sondern nur die Kommandozeile, auf die man normalerweise per SSH zugreift. Das Schöne an Alpine Linux ist, dass es ballastfrei und sehr schlank ist, das unter Umständen Mühsame: man muss selbst so gängige Tools wie Nano erst via Package Manager installieren.</p><p>Die Konfiguration des LAMP Stacks kann man 1:1 aus dem Git-Repository übernehmen oder, wenn man gute Gründe dafür hat, an die eigenen Gegebenheiten anpassen. Nach dem Start die Installation mittels Docker Composer kann man sich erst einmal eine Tasse Kaffee brauen, den der Vorgang dauert ein Weilchen.</p><p>Hat der Composer seine Arbeit getan, greift man via HTTP auf phpMyAdmin zu und verwaltet dort die Datenbank. Das Root-Passwort der DB wird vor dem Installationsprozess im Konfigurationsfile abgelegt und lässt sich via phpInfo abrufen.</p><p>Als nützlichen Zusatz habe ich mir noch einen Reverse Proxy mit Nginx eingerichtet, der wie PHP/Mysql in einem Docker Container läuft und es überflüssig macht, die verschiedenen Ports jeweils explizit einzugeben.</p>.
+</div>
+<aside class="col-md-4 blog-sidebar">
+<div class="p-4 mb-3 bg-light rounded">
+<h4 class="font-italic">Kontakt</h4>
+<p class="mb-0">Calya Consult GmbH<br>6300 Zug, Schweiz<br>Telefon +41 41 743 09 09</p>
+</div>
+<div class="p-4">
+<h4 class="font-italic">Verwandte Artikel</h4>
+<ol class="list-unstyled mb-0">
+<li class="archli"><a href="blogpost-20200828-1.html">Wie komme ich zu einem eigenen Webserver?</a></li>
+</ol>
+</div>
+<div class="p-4">
+<h4 class="font-italic">Archiv</h4>
+<ol class="list-unstyled mb-0">
+<li class="archli"><a href="blogpost-20220712-1.html">blogpost-20220712-1.html</a></li>
+<li class="archli"><a href="blogpost-20220707-1.html">blogpost-20220707-1.html</a></li>
+<li class="archli"><a href="blogpost-20220525-1.html">blogpost-20220525-1.html</a></li>
+<li class="archli"><a href="blogpost-20200902-1.html">blogpost-20200902-1.html</a></li>
+<li class="archli"><a href="blogpost-20200911-1.html">blogpost-20200911-1.html</a></li>
+<li class="archli"><a href="blogpost-20200828-1.html">blogpost-20200828-1.html</a></li>
+<li class="archli"><a href="blogpost-20200830-1.html">blogpost-20200830-1.html</a></li>
+<li class="archli"><a href="blogpost-20200819-1.html">blogpost-20200819-1.html</a></li>
+<li class="archli"><a href="blogpost-20200822-1.html">blogpost-20200822-1.html</a></li>
+<li><a href="september-2020.html">September 2020</a></li>
+<li><a href="august-2020.html">August 2020</a></li>
+</ol>               </div>
+<div class="p-4">
+<h4 class="font-italic">Anderswo</h4>
+<ol class="list-unstyled">
+<li><a href="#">GitHub</a></li>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Facebook</a></li>
+</ol>
+</div>
+</aside>
+<!-- /.blog-sidebar -->
+</div>
+<!-- /.row -->
+</main>
+<!-- /.container -->
+<footer class="blog-footer">
+<p class=".big">Blog by <a href="https://calyaconsult.ch">Calya Consult GmbH</a></p>
+<p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+<p>
+<a href="#TOP">Back to top</a>
+</p>
+</footer>
+</body></html>

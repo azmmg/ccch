@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NDJT8PF');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="description" content="Daten in sinnvolle Gruppen einteilen, gehört zu den grundlegenden Verfahren des maschinellen Lernens. Man muss kein Data Scientist sein, um zu verstehen, worum es dabei geht.">
+    <title>Was ist Clustering und wozu dient es? : Wissen : Calya Consult</title>
+   <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/localstyle.css" rel="stylesheet">
+    <!-- link href="jumbotron.css" rel="stylesheet"  Der Inhalt von jumbotron.css steht am Ende des <style>-Tags -->
+  <style>
+    .jumbotron {background:transparent;}
+    .big {font-size:120%}
+    .ital {font-style: italic;}
+  </style>
+  </head>
+  <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDJT8PF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">[Calya Consult: Wissen]</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto"><li class="nav-item"><a href="index.html" class="nav-link"><span class="symbol-b">&raquo; </span>Home</a></li>
+      <li class="nav-item"><a href="https://calyaconsult.ch/ccch/index.html" class="nav-link"><span class="symbol-b">&raquo; </span>Calya Consult</a></li>
+      <li class="nav-item"><a href="https://calyaconsult.ch/ccch/website-check-up-light.html" class="nav-link"><span class="symbol-b">&raquo; </span>Website Checkup Light</a></li>
+      <li class="nav-item"><a href="https://calyaconsult.ch/ccch/website-einrichten.html" class="nav-link"><span class="symbol-b">&raquo; Website einrichten</span></a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Was ist Clustering?</h1>
+      <h2>Und wozu dient es?</h2>
+      <hr>
+      <p class="beitragsdatum">5. September 2023</p>
+      <!--h3 class="hero"></h3-->
+      <p><strong>Definition:</strong> Daten-Clustering ist eine Technik zur Gruppierung von Datenpunkten unter dem Aspekt einer Zusammengehörigkeit.</p>
+      <p>Es findet in verschiedenen Bereichen Anwendung, in denen es von Vorteil ist, Muster, Ähnlichkeiten oder natürliche Gruppierungen in Datensätzen zu erkennen. Einige der wichtigsten Bereiche, in denen Daten-Clustering angewandt wird, sind:</p>
+      <ul>
+      <li><strong>Marktsegmentierung:</strong> Der oft schwer überschaubare Markt für die Produkte eines Unternehmens lässt sich anhand von Merkmalen der Produkte und ihrer möglichen Käufer in Segmente einteilen, die mit spezifischen Angeboten, Promotionen und persönlichen Empfehlungen bearbeitet werden können.</li>
+      <li><strong>Kundensegmentierung:</strong> Clustering wird nicht nur in der Verkaufsförderung, sondern auch in anderen Bereichen eingesetzt, um Kunden in Gruppen einzuteilen, zum Beispiel zur Risikobewertung, zur Vorhersage von Kundenabwanderung (Churn) und für den Kundenservice.</li>
+      <li><strong>Soziale Netzwerkanalyse:</strong> Anhand von Clustern lassen sich Gemeinschaften oder Gruppen von Personen mit ähnlichen Interessen oder Verbindungen in sozialen Netzwerken identifizieren und so deren innere Strukturen und Einflussmuster verstehen.</li>
+      <li><strong>Empfehlungssysteme:</strong> Eine der bekanntesten Anwendungen des Clustering sind automatisch generierte Empfehlungen, die auf der Analyse des Konsumverhaltens einer grossen Zahl von Kunden beruhen und dort aus dem gehäuften gemeinsamen Auftreten bestimmter Produkte den Schluss ziehen: <span class="ital">Kunden, die A angeschaut, gelesen oder gekauft haben, interessieren sich auch für B.</span></li>
+      <li><strong>Warenkorbanalyse:</strong> Im Detailhandel wird das Clustering eingesetzt, um Transaktionsdaten zu analysieren und Produktgruppen zu identifizieren, die häufig zusammen gekauft werden, um Erkenntnisse für das Cross-Selling und die Platzierung von Produkten zu gewinnen.</li>
+      <li><strong>Anomalieerkennung:</strong> Nicht nur ehrliche Kunden zeigen typische Verhaltensmuster, sondern auch unehrliche. Daten-Clustering kann ungewöhnliche Muster oder Ausreisser in Datensätzen auffinden und so bei der Erkennung von Missbrauch, Betrug und Fehlverhalten in verschiedenen Branchen helfen.</li>
+      <li><strong>Cybersicherheit:</strong> Die Auswertung von Clustern kann dazu dienen, verdächtige Verhaltensmuster oder Anomalien im Netzwerkverkehr zu erkennen, was die frühzeitige Identifizierung potenzieller Cyberbedrohungen oder betrügerischer Aktivitäten erleichtert.</li>
+      <li><strong>Bild- und Objekterkennung:</strong> Ein weites Feld für das Clustering ist die automatische Analyse von Bildern. Mit geeigneten Algorithmen lassen sich Farben und Formen erkennen, Objekte identifizieren oder unzulässige Inhalte aufspüren. Die Verarbeitung grösserer Bildbestände wäre ohne automatisches Clustering in der Praxis kaum zu bewältigen.</li>
+      <li><strong>Dokumenten-Clustering und Textanalyse:</strong> Ähnlich wie Bilder, allerdings mit anderen Herangehensweisen, lassen sich auch Texte und Dokumente automatisch auswerten und nach inhaltlichen Kriterien gruppieren und einteilen. Ebenso lässt sich bei einem gegebenen Text, zum Beispiel einem News-Artikel, herausfinden, wovon er handelt und ob er möglicherweise eine Falschnachricht (Fake News) verbreitet.</li>
+      <li><strong>Fertigung und Qualitätskontrolle:</strong> Clustering kann eingesetzt werden, um Muster oder Fehler in Fertigungsprozessen zu erkennen und so die Qualitätskontrolle und Prozessoptimierung zu verbessern.</li>
+      <li><strong>Raumbezogene Datenanalyse:</strong> In geografischen Informationssystemen (GIS) wird das Clustering zur Analyse räumlicher Daten eingesetzt. Von hoher praktischer Bedeutung ist dabei die Identifizierung von so genannten &laquo;Hotspots&raquo; wie Kriminalitätsschwerpunkte, Herde von Krankheitsausbrüchen oder die Verteilung von Ressourcen.</li>
+      <li><strong>Umweltstudien:</strong> Clustering wird in der Umweltforschung eingesetzt, um Orte mit ähnlichen Umwelteigenschaften zu gruppieren und so Studien über Klimamuster und ökologische Trends zu unterstützen.</li>
+      <li><strong>Analyse medizinischer und pflegerischer Daten:</strong> Clustering hilft bei der Erstellung von Patientenprofilen, der Identifizierung von Krankheitssubtypen, der Analyse medizinischer Bilder und der Zuweisung von Ressourcen im Gesundheitswesen.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Nur etwas für die Grossen?</h2>
+        <p>Sind die Datenbstände leicht überschaubar, macht maschinelles Clustering kaum Sinn. Doch die untere Grenze liegt sehr tief. Schon bei einer dreistelligen Zahl an Datensätzen kann die manuelle Analyse so fehlerträchtig und zeitaufwändig sein, dass sich der Einsatz von Machine Learning lohnt.</p>
+        <!--p><a class="btn btn-secondary" href="blogpost-20221207-1.html" role="button">Artikel lesen &raquo;</a></p-->
+      </div>
+      <div class="col-md-4">
+        <h2>Gibt es Tools?</h2>
+        <p>Ja, es gibt zahlreiche Tools für das Clustering von Daten, aber keines, das alle denkbaren Anwendungsfälle abdeckt. Wir dürfen in der nächsten Zeit allerdings mit einer enormen Ausweitung der Möglichkeiten rechnen, ohne spezialisierte Tools arbeiten zu können. Die &laquo;grossen Sprachmodelle&raquo; (LLMs) sind nämlich in der Lage, bestimmte Klassifikationen sozusagen auf Zuruf auszuführen.</p>
+        <!--p><a class="btn btn-secondary" href="blogpost-20221104-1.html" role="button">Artikel lesen &raquo;</a></p-->
+      </div>
+      <div class="col-md-4">
+        <h2>Einstieg finden</h2>
+        <p>Besitzen Sie ein Smartphone oder speichern Sie Fotos bei Google, können Sie einen ersten Eindruck davon gewinnen, was die automatische Gruppierung von Fotos bereits leistet. Unter &laquo;Alben&raquo;, &laquo;Erkunden&raquo; oder ähnlichen Menupunkten findet man automatisch erstellte Gruppierungen, im Web beispielsweise auf <a href="https://photos.google.com/explore" target="_blank">photos.google.com/explore</a></p>
+        <!--p><a class="btn btn-secondary" href="blogpost-20221129-1.html" role="button">Artikel lesen &raquo;</a></p-->
+      </div>
+    </div>
+    <hr>
+    <p><strong>Weitere Themen</strong></p>
+    <ul>
+    <li><a href="index.html">Was ist ein Webserver?</a></li>
+    <li><a href="prozente.html">Tücken der Prozentrechnung</a></li>
+    <li><a href="was-ist-content-writing.html">Was versteht man unter &laquo;Content Writing&raquo;</a></li>
+    <li><a href="stars-und-hunde.html">Stars und Hunde</a></li>
+    </ul>
+    <hr>
+  <p><strong>Zur Erinnerung: wir beraten Sie in Sachen</strong></p>
+  <ul>
+  <li>Google Analytics 4: Am 1. Juli 2023 wurde das bekannte Universal Analytics durch Google Analytics 4 ersetzt. Nun ist es wichtig, mitzugehen, um im <a href="/ccch/web-analytics.html">Web Analytics</a> keine Daten zu verlieren. </li>
+  <li>Digitale Automatisierung: Viele Prozesse lassen sich digitalisieren und automatisieren, was in der Regel zu Kosteneinsparungen führt.</li>
+  <li>Datengetriebenes Business: Auffinden von Potenzialen in Ihren bisher ungenutzten Daten</li>
+  <li>Flexible Arbeit: Home Office, Coworking, virtuelles Büro, digitaler Nomadismus</li>
+  <li>Coaching: Heranführen von Kader und Mitarbeitern an zeitgemässe Arbeitsformen: agile, kundenorientierte Produktentwicklung, Social Media, Coworking, Online-Teamarbeit</li>
+  </ul>
+  </div> <!-- /container -->
+</main>
+<footer class="container">
+  <div class="white-bg footer">
+                <div class="container">
+                    <div class="section-top-border">
+                        <div class="big">&raquo;&raquo; Weitere Dienste von Calya Consult<br>&nbsp;</div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-defination">
+                                    <h5 class="mb-20">Website Check-Up Light</h5>
+                                    <p>Lassen Sie den Experten einen Blick auf Ihre Website werden und erfahren Sie, ob es Probleme gibt und was Sie dagegen tun können</p>
+									<p><a class="btn btn-secondary" href="https://calyaconsult.ch/ccch/website-check-up-light.html" role="button">Mehr dazu &raquo;</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-defination">
+                                    <h5 class="mb-20">Traffic Analyse</h5>
+                                    <p>Zahlen an und für sich sagen gar nichts aus. Erst die Einordnung in einen analytischen Rahmen verwandelt rohe Daten in nützliche Einsichten.</p>
+									<p><a class="btn btn-secondary" href="https://calyaconsult.ch/ccch/traffic-analyse.html" role="button">Mehr dazu &raquo;</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-defination">
+                                    <h5 class="mb-20">Rufen Sie uns an oder<br>kontaktieren Sie uns per Mail</h5>
+                                    <p>Telefon: +41 41 743 09 09<br>E-Mail: <a href="mailto:hello@calyaconsult.ch">hello@calyaconsult.ch</a><br>Twitter: <a href="https://twitter.com/CalyaConsult">@CalyaConsult</a></p>
+                                    <p><a href="https://calyaconsult.ch/ccch/datenschutz.html">Datenschutzerklärung</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

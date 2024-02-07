@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NDJT8PF');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="description" content="Konkurrenzanalyse in der Gastronomie erfordert unter anderem die Auswertung von Speisekarten. Doch wenn diese als PDF-Dokumente vorliegen, wird es schwierig. Verzeifeln sollte man aber nicht." id="meta_description">
+    <title>Daten aus PDF extrahiere: Beispiel Restaurant-Speisekarte</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/blog.css" rel="stylesheet">
+    <link href="./css/template.css" rel="stylesheet">
+    <style id="page_specific_style">
+      pre,
+      code {
+        font-size: 10pt;
+        color: brown;
+        padding: 0;
+        margin: 0
+      }
+      .cspan {
+        padding-left: .25em;
+        padding-right: .25em;
+      }
+      .kursiv {
+        font-style: italic
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 1px solid #777;
+        padding: 2px;
+      }
+
+      .imgcapt {
+        font-size: 75%;
+      }
+      figcaption {
+        padding-left: 2.4em;
+        font-style: italic;
+      }
+      blockquote {
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .old {
+        font-style: italic;
+        color: #999
+      }
+      .palitem {
+        width: 24em;
+        padding: .5em;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 14pt;
+      }
+      .dark {color: #ccc;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDJT8PF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <a class="text-muted" href="index.html">Home</a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href="#">Heikles PDF</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false">
+                <title>Search</title>
+                <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                <path d="M21 21l-5.2-5.2"></path>
+              </svg>
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+          </div>
+        </div>
+      </header>
+      <a aria-label="top" id="TOP"></a>
+      <div class="row mb-2" id="teaserrow">
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Geometrie</strong>
+              <h3 class="mb-0">Mit Farben rechnen</h3>
+              <div class="mb-1 text-muted">8. September</div>
+                <p class="card-text mb-auto">Die Mathematik macht auch vor so etwas Sinnlichem wie der Farbe nicht halt und eröffnet allerlei Farbräume.</p>
+                <a href="blogpost-20230908-1.html" class="stretched-link">Weiterlesen</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="images/colored_pencils_chevre.jpg" alt="Ein Farbkreis, gebildet aus bunten Stiften"></div>
+              </div>
+         </div>
+         <div class="col-md-6">
+           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+             <div class="col p-4 d-flex flex-column position-static">
+               <strong class="d-inline-block mb-2 text-primary">Daten</strong>
+               <h3 class="mb-0">Fotos nutzen</h3>
+               <div class="mb-1 text-muted">24. August</div>
+               <p class="card-text mb-auto">Data Mining mit dem Smartphone: Ihr Fotoarchiv kann eine reichhaltige Datenquelle sein. Nutzen Sie es!</p>
+               <a href="blogpost-20230824-1.html" class="stretched-link">Weiterlesen</a>
+             </div>
+             <div class="col-auto d-none d-lg-block">
+               <img src="images/Apfel.jpg" alt="teaser image 1">
+             </div>
+           </div>
+         </div>
+      </div>
+    </div>
+    <main class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-4 mb-4 font-italic border-bottom"> Die neuesten Beiträge </h3>
+          <h2 class="blog-post-title">Speisekarten als Datenquellen</h2>
+          <p class="blog-post-meta">18. Dezember 2023 <a href="#">Mike</a>
+          </p>
+          <h4>Gastronomische Konkurrenzanalyse</h4>
+          <p>Mit einem Bekannten, der ein italienisches Restaurant betreibt, hatte ich kürzlich eine Diskussion darüber, ob es sinnvoll sei, in einem Unternehmem wie dem seinen die Dienste eines Datenspezialisten in Anspruch zu nehmen. Er sagte zu mir: "Wozu Daten analysieren? Ich kenne alle meine Konkurrenten persönlich und weiss genau, wie sie ticken. Wir reden miteinander, und da bekommt man ja sehr vieles mit."</p>
+          <p>Ich hielt dagegen: "Eine solche persönliche Beziehung zu deinem Umfeld ist natürlich Gold wert. Aber hier in unserer Stadt gibt es noch 50 andere Restaurants wie deines, mit denen du aber keine engere Beziehungen unterhältst. Wie willst du da den Überblick behalten?"</p>
+          <p>Er überlegt kurz, dann sagte er: "OK, lass es uns doch einfach testen. Mach mir eine <a href="/ccch/konkurrenzbeobachtung.html">Konkurrenzanalyse</a> aller vergleichbaren Betriebe und zeige mir dann etwas, das ich noch nicht weiss!"</p>
+          <p>Am nächste Tag wünschte ich mir, ich wäre nicht auf diese Challenge eingegangen. Ich fand relativ schnell die Websites der einschlägigen Restaurants. Aber, als ich dann deren Angebot analysieren wollte, wurde mir Angst und Bange. Neun von zehn Restaurants boten ihre Speisekarte als PDF-Dokument zum Download an. Das ist leicht zu verstehen: Man beauftragt jemand damit, die Karte zu designen, und bekommt dann das Ergebnis als AI oder PDF geliefert, weil die Druckerei genau das verlangt. Wenn man das PDF auch online zur Verfügung stellt, dann hat der prospektive Kunde den Vorteil, genau das zu sehen, was er im Restaurant am Tisch auch sehen würde.</p>
+          <h4>PDF ist eine schwierige Datenquelle</h4>
+          <p>Es gibt also gute Gründe, die Speisekarte eines Restaurants als PDF-Dokument zu erstellen. Doch für die Auswertung der darin enthaltenen Daten &mdash; Preise, spezielle Angebote, Auswahl an Gerichten etc. &mdash; eignet es sich nicht besonders gut und stellt den Datenspezialisten vor einge Herausforderungen.</p>
+          <p>PDF ist, so beschreibt es die Wikipedia, "eine vektorbasierte Seitenbeschreibungssprache", die eigeführt wurde, "damit Dokumente einfach und verlässlich präsentiert und weitergegeben werden können", sagt dazu der Erfinder, Adobe Inc.</p>
+          <p>PDF ist also nicht dafür konzipiert, Daten in strukturierter Form zu speichen, sondern um Dokumente, hauptsächlich Texte und Grafiken, sauber und geräteunabhängig darzustellen.</p>
+          <p>Man kann PDF in XML umwandeln, doch, obwohl XML exakt zu dem Zweck dient, Daten strukturiert zu speichern, nütz das nicht viel, denn das XML, das aus der Umwandlung hervorgeht, beschreibt weiterhin nur die Struktur einer Seite und nicht die Struktur der Daten, von denen die Seite handelt.</p>
+          <p>Es gibt Online-Dienste und Programmbibliotheken, die man in Anspruch nehmen kann, um Daten aus PDF zu extrahieren, doch sind diese entweder teuer oder aber nicht besonders hilfreich.
+          <p>Unserer Erfahrung nach, führt es am schnellsten zum Ziel, wenn man den reinen Text aus dem PDF extrahiert und dann teilweise manuell, teilweise mit spezifisch für das zu analysierende Dokument geschriebenen Scripts in ein strukturiertes Format wie JSON, HTML oder XML überführt.</p>
+          <p>Das ist ein zum Teil sehr grosser Aufwand, der allerdings schon jetzt durch den Einsatz von künstlicher Intelligenz reduziert werden kann, denn diese ist hervorragend dazu geeignet, in Datenbergen Muster zu erkennen.</p>
+          <p>Die Umwandlung von PDF in strukturierte Datenformate ist Teil unseres Angebots <a href="/ccch/datenbereinigung.html">Datenbereinigung</a>.
+          <h5>Anmerkungen</h5>
+          <p><strong>Tools für die Extraktion von Plain Text aus PDF</strong>: <a href="https://tabula.technology/">Tabula</a> (Java basiert, extrahiert Tabellen), <a href="https://en.wikipedia.org/wiki/Pdftotext">pdftotext</a> (Xpdf) und <a href="https://github.com/pdfminer/pdfminer.six/blob/master/tools/pdf2txt.py">pdf2txt</a> (Python Script, basierend auf pdfminer) sowie diverse Online-Tools, unter anderem der <a href="https://www.adobe.com/acrobat/online/pdf-to-word.html">PDF to Word</a>-Konverter von Adobe. Sehr nützlich fand ich auch den Dokumentenbetrachter <a href="https://okular.kde.org/de/">Okular</a> von KDE.</p>
+          <p>Die genannten Tools setzen voraus, dass das PDF bereits das Datenformat 'text' enthält. Das ist jedoch nicht immer der Fall. Da, wo der Text in Form eines Bildes in das Dokument aufgenommen wurde, können sie nichts ausrichten. In solchen Fällen muss OCR-Software eingesetzt werden, um den Text im Bild zu erkennen.</p>
+          <p><strong>Wie viele Restaurants gibt es überhaupt?</strong> Die NZZ berichtete am 6. Sept 2023: &laquo;33 000 Restaurants gibt es in der <em>Schweiz</em>, allein in der Stadt Zürich sind es 1202 Lokale.&raquo; <a href="https://www.nzz.ch/zuerich/zuerich-gastronomie-experte-peter-herzog-es-gibt-zu-viele-restaurants-ld.1752260">Link zum Artikel</a></p>
+          <p>Für Deutschland (Stand 2021) nennt <a href="https://de.statista.com/themen/137/gastronomie/#topicOverview">Statista</a> folgende Zahlen:  &laquo;Aktuell gibt es in <em>Deutschland</em> rund 60.000 Restaurants, 34.000 Imbissstuben, über 27.400 Schankwirtschaften, Bars sowie Tanz- und Vergnügungslokale und etwa 10.000 Cafés.&raquo; Addiert sind das 131.400 Gastronomiebetriebe. Der deutsche Branchenverband DEHOGA setzt die <a href="https://www.dehoga-bundesverband.de/zahlen-fakten/anzahl-der-unternehmen/">Anzahl der umsatzsteuerpflichtigen Unternehmen im Gastgewerbe</a> mit 186.597 an, darin eingeschlossen sind auch die Hotellerie und sonstige Beherbergungsbetriebe.</p>
+        </div>
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">Kontakt</h4>
+            <p class="mb-0">Calya Consult GmbH <br>6300 Zug, Schweiz <br>Telefon +41 41 743 09 09 </p>
+          </div>
+          <div class="p-4">
+            <h4 class="font-italic">Archiv</h4>
+            <ol class="list-unstyled mb-0">
+              <li class="archli">
+                <a href="blogpost-20230908-1.html">blogpost-20230908-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20230824-1.html">blogpost-20230824-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20221129-1.html">blogpost-20221129-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20221104-1.html">blogpost-20221104-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20220923-1.html">blogpost-20220923-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20220903-1.html">blogpost-20220903-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20220712-1.html">blogpost-20220712-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20220707-1.html">blogpost-20220707-1.html</a>
+              </li>
+              <li class="archli">
+                <a href="blogpost-20220525-1.html">blogpost-20220525-1.html</a>
+              </li>
+              <li>
+                <a href="september-2020.html">September 2020</a>
+              </li>
+              <li>
+                <a href="august-2020.html">August 2020</a>
+              </li>
+            </ol>
+          </div>
+          <div class="p-4">
+            <h4 class="font-italic">Anderswo</h4>
+            <ol class="list-unstyled">
+              <li>
+                <a href="#">GitHub</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+            </ol>
+          </div>
+        </aside>
+        <!-- /.blog-sidebar -->
+      </div>
+      <!-- /.row -->
+    </main>
+    <!-- /.container -->
+    <footer class="blog-footer">
+      <p class=".big">Blog by <a href="https://calyaconsult.ch">Calya Consult GmbH</a>
+      </p>
+      <p></p>
+      <p>
+        <a href="#TOP">Back to top</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NDJT8PF');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="description" content="Rauf und runter in Prozent ausgedrückt ...">
+    <title>Tücken der Prozentrechnug</title>
+   <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/localstyle.css" rel="stylesheet">
+    <!-- link href="jumbotron.css" rel="stylesheet"  Der Inhalt von jumbotron.css steht am Ende des <style>-Tags -->
+  <style>
+    h3 {font-size: 14pt;}
+    th, td {font-size:8pt; border-right: 1px solid #777;padding: 3px; border: 1px solid #bbb;}
+    /* th:first-child {border-left: 1px solid #333;} */
+    td {text-align: right;}
+    th {background-color: #eef;}
+    table {margin-bottom: .75rem; background-color: #eee; border-collapse: collapse;}
+    /*div#mathplot {background-color: white; padding: .25rem;}
+    div#mathplot img {margin-right: .5rem;}*/
+    div#mathplot2 {margin-bottom: .75rem;}
+    .up, .down {
+      font-weight: bolder;
+    }
+    .up {
+      color: green;
+    }
+    .down {
+      color: red;
+    }
+    tr.highlight {background-color: #eef; font-weight: bold;}
+  </style>
+  </head>
+  <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDJT8PF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">[Calya Consult: Wissen]</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto"><li class="nav-item"><a href="index.html" class="nav-link"><span class="symbol-b">&raquo; </span>Home</a></li>
+      <li class="nav-item"><a href="https://calyaconsult.ch/ccch/index.html" class="nav-link"><span class="symbol-b">&raquo; </span>Calya Consult</a></li>
+      <li class="nav-item"><a href="https://calyaconsult.ch/ccch/website-check-up-light.html" class="nav-link"><span class="symbol-b">&raquo; </span>Website Checkup Light</a></li>
+      <li class="nav-item"><a href="https://calyaconsult.ch/ccch/website-einrichten.html" class="nav-link"><span class="symbol-b">&raquo; Website einrichten</span></a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Tücken der Prozentrechnug</h1>
+      <!--h2>Und wozu dient es?</h2-->
+      <hr>
+      <p class="beitragsdatum">28. Oktober 2023</p>
+      <!--h3 class="hero"></h3-->
+      <p><em>&laquo;Oha! Meine Besucherzahlen sind im September um 20% gegenüber dem August zurückgegangen. Das heisst, im Oktober müsste ich um 20% steigern, damit ich die Augustzahlen wieder erreiche.&raquo;</em></p>
+      <p><strong>Falsch!</strong> Nach einem Rückgang von 20% muss ich um 25% steigern, um wieder auf den Ausgangswert zu kommen. Das ist nicht intuitiv, aber leider korrekt: Wenn ich vom Ausgangswert um 20% nach unten gehe, komme ich bei 80% an. Von diesen 80% machen die verlorenen 20% aber nicht mehr ein Fünftel aus, sondern ein Viertel. Will ich zum alten Wert zurück, muss ich nun um ein Viertel, und das sind 25%, zulegen.</p>
+      <p>Ganz augenfällig ist es, wenn ich einen Verlust von 50% verbuche. In diesem Fall beträgt der neue Wert die Hälfte des alten, folglich muss ich verdoppeln, um wieder auf den alten Wert zu kommen.</p>
+      <div>
+        <h3></h3>
+        <table>
+          <thead>
+            <tr><th>Alter Wert</th><th>Verlust in %</th><th>Verlust absolut</th><th>Neuer Wert</th><th>erforderlicher Zugewinn</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>100</td><td><span class="down">&#8595;</span> 10 %</td><td>10</td><td>90</td><td><span class="up">&#8593;</span> 11.11 %</td></tr>
+            <tr><td>100</td><td><span class="down">&#8595;</span> 20 %</td><td>20</td><td>80</td><td><span class="up">&#8593;</span> 25.00 %</td></tr>
+            <tr class="highlight"><td>100</td><td><span class="down">&#8595;</span> 50 %</td><td>50</td><td>50</td><td><span class="up">&#8593;</span> 100.00 %</td></tr>
+            <tr><td>100</td><td><span class="down">&#8595;</span> 70 %</td><td>70</td><td>30</td><td><span class="up">&#8593;</span> 233.33 %</td></tr>
+            <tr><td>100</td><td><span class="down">&#8595;</span> 90 %</td><td>90</td><td>10</td><td><span class="up">&#8593;</span> 900.00 %</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Die Formel zur Umrechnung von Verlust in erforderlichen Zugewinn, um wieder zum Ausgangswert zurückzukommen, lautet: <strong>100*p/(100-p)</strong>. Hierbei ist <strong>p</strong> die Prozentzahl des Verlusts.</p>
+      <p>Die Grafik zur Formel sieht in Google Sheets so aus:<br><img class="img-fluid" src="images/Funktionsplot-2.jpg" alt="Grafik aus der Tabellenkalkulation"></p>
+      <h3>Ungünstig für Zielvorgaben</h3>
+      <p>Dieser Zusammenhang zwischen Abnahme und Zunahme in Prozent kann bei Zielvorgaben zu Verunsicherung führen. Habe ich im letzten Quartal 20% weniger Umsatz gemacht, verlangt der Vorgesetzte, dass ich im laufenden Quartal 25% mehr Umsatz machen, um wieder auf Kurs zu kommen. Das klingt ungerecht. In absoluten Zahlen ausgedrückt bedeutet das allerdings nur: Ich habe 10'000 CHF weniger umgesetzt, nun muss ich 10'000 CHF mehr umsetzen, um die Scharte wieder auszuwetzen - und das leuchtet ein.</p>
+      <h3>Vorsicht bei Lohnverhandlungen</h3>
+      <p>Angenommen, eine Firma musste während schwieriger Zeiten die Löhne einiger Mitarbeiter um 25% kürzen. Nun geht es wieder aufwärts, und die Firma kündigt an, diese Löhne werden ab 1. Januar um 25% heraufgesetzt. Bekommen die Betroffenen dann genau so viel wie vor der Lohnkürzung? Nein! Sie erhalten in Wirklichkeit 6.25% weniger als zuvor. Das lässt sich ganz einfach zeigen: Verdiente jemand vor der Lohnkürzung CHF 8000.-, verdient er oder sie danach 6000.- Wenn dann der Lohn von 6000.- um 25% heraufgesetzt wird, beträgt der neue Lohn 7500.-, also 500 CHF weniger als vor der Lohnkürzung, das entspricht einem Minus von 6.25% des ursprünglichen Lohns.</p>
+      <h3>Kleiner Exkurs ins Reich der Mathematik</h3>
+      <p>Der Zusammenhang zwischen der Abnahme in Prozent und der ausgleichenden Zunahme in Prozent ist: <strong><em>Anfangswert A - A*x = B (neuer Wert) und B + B*y = A (wieder der Anfangswert)</em></strong>, wobei x und y die Prozentsätze der Ab- bzw. Zunahme sind. Was uns interessiert ist, wie x und y zusammenhängen. Und hier finden wir die Funktion <strong><em>y = f(x) = 100*x/(100-x)</em></strong>. Wenn wir x und y nicht in Prozent, sondern in schlichten rationalen Zahlen ausdrücken, wird aus der 100 eine 1 und die Formel lautet <strong><em>y = f(x) = 1*x/(1-x)</em></strong>, und gehört damit ebenfalls zur Funktionsschar <strong><em>y = a*x/(a-x)</em></strong></strong>.</p>
+      <p>Wenn wir die mathematische Funktion in ein kartesisches Koordinatensystem einzeichnen, zeigt sich folgendes Bild. Alle Funktionen der Form <strong><em>y = a*x/(a-x)</em></strong> sind an der Stelle <strong><em>x = a</em></strong> undefiniert, da an dieser Stelle der Nenner Null wird und der Funktionswert gegen postiv und negativ Unendlich strebt. Bei unserer Funktion, bei der wir a = 100 setzen, darf x also nicht 100 werden. Werte im Bereich x > 100 sind mathematisch zwar definiert, sind für unseren Zusammenhang allerdings ohne Belang, denn mit einem Verlust von mehr als 100 Prozent brauchen wir nicht zu rechnen. Ebenfalls ohne Belang sind negative Verluste, denn in diesem Fall brauchen wir nur die Bezugsgrössen zu vertauschen.
+      <div id="mathplot1">
+        <div id="mathplot2">
+          <svg  fill="#303060" version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='175.715882pt' height='29.398313pt' viewBox='-.239051 -.227335 175.715882 29.398313'>
+          <defs>
+          <path id='g0-0' d='M9.454143-3.299625C9.698028-3.299625 9.95626-3.299625 9.95626-3.586549S9.698028-3.873473 9.454143-3.873473H1.692851C1.448966-3.873473 1.190734-3.873473 1.190734-3.586549S1.448966-3.299625 1.692851-3.299625H9.454143Z'/>
+          <path id='g0-3' d='M3.945204-6.125826C3.95955-6.326672 3.95955-6.670981 3.586549-6.670981C3.35701-6.670981 3.170509-6.48448 3.213548-6.29798V-6.111479L3.414395-3.887819L1.578082-5.222015C1.448966-5.293746 1.420273-5.322439 1.31985-5.322439C1.119003-5.322439 .932503-5.121592 .932503-4.920745C.932503-4.691206 1.075965-4.633821 1.219427-4.56209L3.256586-3.586549L1.276811-2.625354C1.047272-2.510584 .932503-2.453199 .932503-2.238007S1.119003-1.836313 1.31985-1.836313C1.420273-1.836313 1.448966-1.836313 1.807621-2.108891L3.414395-3.270933L3.199202-.860772C3.199202-.559502 3.457433-.487771 3.572203-.487771C3.744357-.487771 3.95955-.588194 3.95955-.860772L3.744357-3.270933L5.58067-1.936736C5.709786-1.865005 5.738478-1.836313 5.838902-1.836313C6.039748-1.836313 6.226249-2.03716 6.226249-2.238007C6.226249-2.453199 6.097133-2.52493 5.924979-2.611008C5.064207-3.041393 5.035515-3.041393 3.902165-3.572203L5.88194-4.533398C6.111479-4.648167 6.226249-4.705552 6.226249-4.920745S6.039748-5.322439 5.838902-5.322439C5.738478-5.322439 5.709786-5.322439 5.351131-5.049861L3.744357-3.887819L3.945204-6.125826Z'/>
+          <path id='g2-40' d='M4.662514 3.486126C4.662514 3.443087 4.662514 3.414395 4.418628 3.170509C2.984009 1.721543 2.180622-.645579 2.180622-3.572203C2.180622-6.355365 2.854893-8.751179 4.519052-10.44403C4.662514-10.573146 4.662514-10.601839 4.662514-10.644877C4.662514-10.730954 4.590783-10.759647 4.533398-10.759647C4.346897-10.759647 3.170509-9.726721 2.467546-8.320793C1.73589-6.871828 1.405927-5.336785 1.405927-3.572203C1.405927-2.295391 1.606774-.588194 2.352776 .946849C3.199202 2.668392 4.37559 3.600895 4.533398 3.600895C4.590783 3.600895 4.662514 3.572203 4.662514 3.486126Z'/>
+          <path id='g2-41' d='M4.045627-3.572203C4.045627-4.662514 3.902165-6.441442 3.098778-8.105601C2.252353-9.827144 1.075965-10.759647 .918157-10.759647C.860772-10.759647 .789041-10.730954 .789041-10.644877C.789041-10.601839 .789041-10.573146 1.032926-10.329261C2.467546-8.880295 3.270933-6.513173 3.270933-3.586549C3.270933-.803387 2.596661 1.592428 .932503 3.285279C.789041 3.414395 .789041 3.443087 .789041 3.486126C.789041 3.572203 .860772 3.600895 .918157 3.600895C1.104657 3.600895 2.281045 2.567969 2.984009 1.162042C3.715665-.30127 4.045627-1.850659 4.045627-3.572203Z'/>
+          <path id='g2-48' d='M6.427096-4.590783C6.427096-5.781517 6.355365-6.943559 5.838902-8.03387C5.250708-9.224604 4.217782-9.54022 3.514818-9.54022C2.682739-9.54022 1.664159-9.12418 1.133349-7.933446C.731656-7.029636 .588194-6.140172 .588194-4.590783C.588194-3.199202 .688617-2.151929 1.20508-1.133349C1.764582-.043039 2.75447 .30127 3.500472 .30127C4.748591 .30127 5.465901-.444732 5.88194-1.276811C6.398403-2.352776 6.427096-3.758703 6.427096-4.590783ZM3.500472 .014346C3.041393 .014346 2.108891-.243885 1.836313-1.807621C1.678505-2.668392 1.678505-3.758703 1.678505-4.762937C1.678505-5.939325 1.678505-7.000943 1.908044-7.847369C2.151929-8.808564 2.883585-9.253296 3.500472-9.253296C4.045627-9.253296 4.877707-8.923334 5.150284-7.689561C5.336785-6.871828 5.336785-5.738478 5.336785-4.762937C5.336785-3.801742 5.336785-2.711431 5.178977-1.836313C4.906399-.258232 4.002589 .014346 3.500472 .014346Z'/>
+          <path id='g2-49' d='M4.131704-9.195911C4.131704-9.525874 4.131704-9.54022 3.84478-9.54022C3.500472-9.152873 2.783162-8.622064 1.305504-8.622064V-8.206024C1.635466-8.206024 2.352776-8.206024 3.141817-8.579025V-1.104657C3.141817-.588194 3.098778-.41604 1.836313-.41604H1.391581V0C1.778928-.028692 3.170509-.028692 3.643934-.028692S5.494593-.028692 5.88194 0V-.41604H5.437208C4.174743-.41604 4.131704-.588194 4.131704-1.104657V-9.195911Z'/>
+          <path id='g2-59' d='M2.6397-5.494593C2.6397-5.88194 2.309738-6.18321 1.951083-6.18321C1.535043-6.18321 1.248119-5.853248 1.248119-5.494593C1.248119-5.064207 1.606774-4.791629 1.936736-4.791629C2.324084-4.791629 2.6397-5.092899 2.6397-5.494593ZM2.395815-.143462C2.395815 .358655 2.395815 1.377235 1.520697 2.453199C1.43462 2.567969 1.43462 2.596661 1.43462 2.625354C1.43462 2.697085 1.506351 2.768816 1.578082 2.768816C1.678505 2.768816 2.682739 1.707197 2.682739 .028692C2.682739-.502117 2.6397-1.391581 1.936736-1.391581C1.520697-1.391581 1.248119-1.075965 1.248119-.702964C1.248119-.315616 1.520697 0 1.951083 0C2.22366 0 2.324084-.086077 2.395815-.143462Z'/>
+          <path id='g2-61' d='M9.683682-4.648167C9.884529-4.648167 10.14276-4.648167 10.14276-4.906399C10.14276-5.178977 9.898875-5.178977 9.683682-5.178977H1.233773C1.032926-5.178977 .774695-5.178977 .774695-4.920745C.774695-4.648167 1.01858-4.648167 1.233773-4.648167H9.683682ZM9.683682-1.979775C9.884529-1.979775 10.14276-1.979775 10.14276-2.238007C10.14276-2.510584 9.898875-2.510584 9.683682-2.510584H1.233773C1.032926-2.510584 .774695-2.510584 .774695-2.252353C.774695-1.979775 1.01858-1.979775 1.233773-1.979775H9.683682Z'/>
+          <path id='g1-97' d='M4.318205-1.707197C4.246474-1.463312 4.246474-1.43462 4.045627-1.162042C3.730011-.760348 3.098778-.143462 2.424507-.143462C1.836313-.143462 1.506351-.674271 1.506351-1.520697C1.506351-2.309738 1.951083-3.916511 2.22366-4.519052C2.711431-5.523285 3.385702-6.039748 3.945204-6.039748C4.892053-6.039748 5.078553-4.86336 5.078553-4.748591C5.078553-4.734245 5.035515-4.547744 5.021168-4.519052L4.318205-1.707197ZM5.236361-5.379823C5.078553-5.752824 4.691206-6.326672 3.945204-6.326672C2.324084-6.326672 .573848-4.232128 .573848-2.108891C.573848-.688617 1.405927 .143462 2.381468 .143462C3.170509 .143462 3.84478-.473424 4.246474-.946849C4.389936-.100423 5.064207 .143462 5.494593 .143462S6.269288-.11477 6.527519-.631233C6.757058-1.119003 6.957905-1.994121 6.957905-2.051506C6.957905-2.123237 6.90052-2.180622 6.814443-2.180622C6.685327-2.180622 6.670981-2.108891 6.613596-1.893698C6.398403-1.047272 6.125826-.143462 5.537632-.143462C5.121592-.143462 5.092899-.516463 5.092899-.803387C5.092899-1.133349 5.135938-1.291158 5.265054-1.850659C5.365477-2.209314 5.437208-2.52493 5.551978-2.94097C6.082787-5.092899 6.211903-5.609363 6.211903-5.69544C6.211903-5.896286 6.054095-6.054095 5.838902-6.054095C5.379823-6.054095 5.265054-5.551978 5.236361-5.379823Z'/>
+          <path id='g1-102' d='M6.398403-5.767171C6.685327-5.767171 6.800097-5.767171 6.800097-6.039748C6.800097-6.18321 6.685327-6.18321 6.427096-6.18321H5.265054C5.537632-7.660868 5.738478-8.679448 5.853248-9.138527C5.939325-9.482835 6.240595-9.812798 6.613596-9.812798C6.914866-9.812798 7.216136-9.683682 7.359598-9.554566C6.800097-9.497182 6.627942-9.081142 6.627942-8.837257C6.627942-8.550333 6.843135-8.378178 7.115713-8.378178C7.402637-8.378178 7.833023-8.622064 7.833023-9.167219C7.833023-9.769759 7.230483-10.099722 6.59925-10.099722C5.982364-10.099722 5.379823-9.640643 5.092899-9.081142C4.834668-8.579025 4.691206-8.062562 4.361243-6.18321H3.400048C3.127471-6.18321 2.984009-6.18321 2.984009-5.924979C2.984009-5.767171 3.070086-5.767171 3.35701-5.767171H4.275166C4.016935-4.432974 3.428741-1.190734 3.098778 .344309C2.854893 1.592428 2.6397 2.6397 1.92239 2.6397C1.879352 2.6397 1.463312 2.6397 1.20508 2.367122C1.936736 2.309738 1.936736 1.678505 1.936736 1.664159C1.936736 1.377235 1.721543 1.20508 1.448966 1.20508C1.162042 1.20508 .731656 1.448966 .731656 1.994121C.731656 2.611008 1.362889 2.926624 1.92239 2.926624C3.385702 2.926624 3.988242 .30127 4.146051-.41604C4.404282-1.520697 5.107246-5.336785 5.178977-5.767171H6.398403Z'/>
+          <path id='g1-120' d='M6.800097-5.853248C6.341018-5.767171 6.168864-5.422862 6.168864-5.150284C6.168864-4.805976 6.441442-4.691206 6.642289-4.691206C7.072674-4.691206 7.373945-5.064207 7.373945-5.451554C7.373945-6.054095 6.685327-6.326672 6.082787-6.326672C5.207669-6.326672 4.719898-5.465901 4.590783-5.193323C4.26082-6.269288 3.371356-6.326672 3.113124-6.326672C1.649813-6.326672 .875118-4.447321 .875118-4.131704C.875118-4.07432 .932503-4.002589 1.032926-4.002589C1.147696-4.002589 1.176388-4.088666 1.20508-4.146051C1.692851-5.738478 2.654046-6.039748 3.070086-6.039748C3.715665-6.039748 3.84478-5.437208 3.84478-5.092899C3.84478-4.777283 3.758703-4.447321 3.586549-3.758703L3.098778-1.793274C2.883585-.932503 2.467546-.143462 1.707197-.143462C1.635466-.143462 1.276811-.143462 .975541-.329963C1.492004-.430386 1.606774-.860772 1.606774-1.032926C1.606774-1.31985 1.391581-1.492004 1.119003-1.492004C.774695-1.492004 .401693-1.190734 .401693-.731656C.401693-.129116 1.075965 .143462 1.692851 .143462C2.381468 .143462 2.869239-.401693 3.170509-.989888C3.400048-.143462 4.117358 .143462 4.648167 .143462C6.111479 .143462 6.886174-1.73589 6.886174-2.051506C6.886174-2.123237 6.828789-2.180622 6.742712-2.180622C6.613596-2.180622 6.59925-2.108891 6.556211-1.994121C6.168864-.731656 5.336785-.143462 4.691206-.143462C4.189089-.143462 3.916511-.516463 3.916511-1.104657C3.916511-1.420273 3.973896-1.649813 4.203435-2.596661L4.705552-4.547744C4.920745-5.408516 5.408516-6.039748 6.068441-6.039748C6.097133-6.039748 6.498827-6.039748 6.800097-5.853248Z'/>
+          </defs>
+          <g id='page1' transform='matrix(1.13 0 0 1.13 -63.986043 -60.850048)'>
+          <use x='56.413267' y='69.680395' xlink:href='#g1-102'/>
+          <use x='64.868982' y='69.680395' xlink:href='#g2-40'/>
+          <use x='70.331771' y='69.680395' xlink:href='#g1-120'/>
+          <use x='78.314272' y='69.680395' xlink:href='#g2-41'/>
+          <use x='87.762056' y='69.680395' xlink:href='#g2-61'/>
+          <use x='102.672628' y='69.680395' xlink:href='#g1-97'/>
+          <use x='113.234554' y='69.680395' xlink:href='#g0-3'/>
+          <use x='137.24525' y='59.97509' xlink:href='#g1-120'/>
+          <rect x='124.791189' y='65.806935' height='.573822' width='32.890592'/>
+          <use x='124.791189' y='79.521162' xlink:href='#g1-97'/>
+          <use x='135.353116' y='79.521162' xlink:href='#g0-0'/>
+          <use x='149.699303' y='79.521162' xlink:href='#g1-120'/>
+          <use x='158.877295' y='69.680395' xlink:href='#g2-59'/>
+          <use x='165.170284' y='69.680395' xlink:href='#g1-97'/>
+          <use x='176.529209' y='69.680395' xlink:href='#g2-61'/>
+          <use x='191.439781' y='69.680395' xlink:href='#g2-49'/>
+          <use x='198.463367' y='69.680395' xlink:href='#g2-48'/>
+          <use x='205.486952' y='69.680395' xlink:href='#g2-48'/>
+          </g>
+          </svg>
+        </div>
+        <img src="images/Funktionsplot-4.jpg" class="img-fluid" alt="Plot der Funktion y=100*x/(100-x)">
+        <!--img src="images/Funktionsplot-3.jpg"-->
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr>
+    <p><strong>Weitere Themen</strong></p>
+    <ul>
+    <li><a href="verwaiste-seiten.html">Verwaiste Seiten</a></li>
+    <li><a href="slideshow-datenbank-fehler.html">Datenbank-Fehler und ihre Auswirkungen</a></li>
+    <li><a href="prozente.html">Tücken der Prozentrechnung</a></li>
+    <li><a href="index.html">Was ist ein Webserver?</a></li>
+    <li><a href="was-ist-clustering.html">Was ist Clustering und wozu dient es?</a></li>
+    <li><a href="was-ist-content-writing.html">Was versteht man unter &laquo;Content Writing&raquo;</a></li>
+    <li><a href="stars-und-hunde.html">Stars und Hunde</a></li>
+    </ul>
+    <hr>
+  <p><strong>Zur Erinnerung: wir beraten Sie in Sachen</strong></p>
+  <ul>
+  <li>Google Analytics 4: Am 1. Juli 2023 wurde das bekannte Universal Analytics durch Google Analytics 4 ersetzt. Nun ist es wichtig, mitzugehen, um im <a href="/ccch/web-analytics.html">Web Analytics</a> keine Daten zu verlieren. </li>
+  <li>Digitale Automatisierung: Viele Prozesse lassen sich digitalisieren und automatisieren, was in der Regel zu Kosteneinsparungen führt.</li>
+  <li>Datengetriebenes Business: Auffinden von Potenzialen in Ihren bisher ungenutzten Daten</li>
+  <li>Flexible Arbeit: Home Office, Coworking, virtuelles Büro, digitaler Nomadismus</li>
+  <li>Coaching: Heranführen von Kader und Mitarbeitern an zeitgemässe Arbeitsformen: agile, kundenorientierte Produktentwicklung, Social Media, Coworking, Online-Teamarbeit</li>
+  </ul>
+  </div> <!-- /container -->
+</main>
+<footer class="container">
+  <div class="white-bg footer">
+                <div class="container">
+                    <div class="section-top-border">
+                        <div class="big">&raquo;&raquo; Weitere Dienste von Calya Consult<br>&nbsp;</div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-defination">
+                                    <h5 class="mb-20">Website Check-Up Light</h5>
+                                    <p>Lassen Sie den Experten einen Blick auf Ihre Website werden und erfahren Sie, ob es Probleme gibt und was Sie dagegen tun können</p>
+									<p><a class="btn btn-secondary" href="https://calyaconsult.ch/ccch/website-check-up-light.html" role="button">Mehr dazu &raquo;</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-defination">
+                                    <h5 class="mb-20">Traffic Analyse</h5>
+                                    <p>Zahlen an und für sich sagen gar nichts aus. Erst die Einordnung in einen analytischen Rahmen verwandelt rohe Daten in nützliche Einsichten.</p>
+									<p><a class="btn btn-secondary" href="https://calyaconsult.ch/ccch/traffic-analyse.html" role="button">Mehr dazu &raquo;</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-defination">
+                                    <h5 class="mb-20">Rufen Sie uns an oder<br>kontaktieren Sie uns per Mail</h5>
+                                    <p>Telefon: +41 41 743 09 09<br>E-Mail: <a href="mailto:hello@calyaconsult.ch">hello@calyaconsult.ch</a><br>Twitter: <a href="https://twitter.com/CalyaConsult">@CalyaConsult</a></p>
+                                    <p><a href="https://calyaconsult.ch/ccch/datenschutz.html">Datenschutzerklärung</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

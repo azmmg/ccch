@@ -1,98 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://calyaconsult.ch/articles/index.html</loc>
-        <lastmod>2020-09-13T18:09:00+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://calyaconsult.ch/articles/blogpost-20200911-1.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://calyaconsult.ch/articles/blogpost-20200902-1.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://calyaconsult.ch/articles/blogpost-20200830-1.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://calyaconsult.ch/articles/blogpost-20200828-1.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://calyaconsult.ch/articles/blogpost-20200822-1.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://calyaconsult.ch/articles/blogpost-20200819-1.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://calyaconsult.ch/articles/september-2020.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://calyaconsult.ch/articles/august-2020.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
-    </url>
-    <url>
         <loc>https://calyaconsult.ch/ccch/index.html</loc>
-        <lastmod>2020-08-27T09:05:50+00:00</lastmod>
+        <lastmod>2024-02-06T13:02:22+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/website-easy.html</loc>
+        <lastmod>2023-04-13T05:04:03+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/angebot-des-monats-februar-2023.html</loc>
+        <lastmod>2023-03-05T10:03:20+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/website-check-up-light.html</loc>
+        <lastmod>2023-04-12T04:28:09+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/reports-automatisieren.html</loc>
+        <lastmod>2023-04-13T05:25:18+00:00</lastmod>
+    </url>
+    <url>
+      <loc>https://calyaconsult.ch/wissen/index.html</loc>
+      <lastmod>2024-02-06T12:46:27+00:00</lastmod>
+    </url>
+    <url>
+      <loc>https://calyaconsult.ch/wissen/verwaiste-seiten.html</loc>
+      <lastmod>2024-02-06T13:03:54+00:00</lastmod>
+    </url>
+    <url>
+      <loc>https://calyaconsult.ch/wissen/slideshow-datenbank-fehler.html</loc>
+      <lastmod>2023-11-26T07:03:27+00:00</lastmod>
+    </url>
+    <url>
+      <loc>https://calyaconsult.ch/wissen/prozente.html</loc>
+      <lastmod>2024-02-06T12:48:27+00:00</lastmod>
+    </url>
+    <url>
+      <loc>https://calyaconsult.ch/wissen/was-ist-clustering.html</loc>
+      <lastmod>2023-10-23T05:58:51+00:00</lastmod>
+    </url>
+    <url>
+      <loc>https://calyaconsult.ch/wissen/was-ist-content-writing.html</loc>
+      <lastmod>2023-10-23T05:58:37+00:00</lastmod>
+    </url>
+    <url>
+      <loc>https://calyaconsult.ch/wissen/stars-und-hunde.html</loc>
+      <lastmod>2023-10-23T05:59:06+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/konkurrenzbeobachtung.html</loc>
+        <lastmod>2023-04-14T15:45:01+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/traffic-analyse.html</loc>
+        <lastmod>2023-04-11T09:06:42+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/website-einrichten.html</loc>
+        <lastmod>2023-04-09T06:11:02+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/website-management.html</loc>
+        <lastmod>2023-04-12T04:47:27+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/website-monitoring.html</loc>
+        <lastmod>2023-04-11T15:07:07+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/businessplan.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2023-04-13T05:19:03+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/checkup.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2023-04-13T05:11:58+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/datenbereinigung.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2023-04-11T15:03:20+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/datenschutz.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2021-07-09T06:34:25+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/digitaler-werkzeugkasten.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2021-07-09T06:34:25+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/domain-management.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://calyaconsult.ch/ccch/index.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2023-04-12T04:40:20+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/internet-recherche.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2023-04-12T06:04:37+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/proposition.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2023-04-05T05:58:50+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/suchmaschinen-optimierung.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2023-04-12T04:42:42+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/traffic-management.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2023-04-12T04:46:10+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/web-analytics.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2023-04-11T15:28:47+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/analytics-einrichten.html</loc>
+        <lastmod>2023-04-06T04:36:29+00:00</lastmod>
     </url>
     <url>
         <loc>https://calyaconsult.ch/ccch/website-check-up.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
-    </url>    <url>
-        <loc>https://calyaconsult.ch/ccch/website-monitoring.html</loc>
-        <lastmod>2020-08-24T09:32:51+00:00</lastmod>
+        <lastmod>2023-04-12T04:27:27+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://calyaconsult.ch/ccch/muster-check-up.html</loc>
+        <lastmod>2021-07-09T06:34:25+00:00</lastmod>
     </url>
 </urlset>

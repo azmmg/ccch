@@ -1,0 +1,384 @@
+<!DOCTYPE html><html lang="de"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NDJT8PF');</script>
+<!-- End Google Tag Manager -->
+<meta name="description" content="Der Einstieg in die Python-Bibliothek 'Pandas' zwar nicht ganz leicht, aber die Mühe, Pandas zu lernen, lohnt sich. Schon nach kurzer Einarbeitungszeit steigt die Produktivität sprunghaft." id="meta_description">
+<title>Python-Bibliothek Pandas</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/blog.css" rel="stylesheet">
+<link href="./css/template.css" rel="stylesheet">
+<style id="page_specific_style">
+pre, code {font-size:10pt;color:brown;padding:0;margin:0}
+.kursiv {font-style:italic}
+table {  border-collapse: collapse;}
+td, th  {border:1px solid #777; padding:2px;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDJT8PF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="container">
+<header class="blog-header py-3">
+<div class="row flex-nowrap justify-content-between align-items-center">
+<div class="col-4 pt-1">
+<a class="text-muted" href="index.html">Home</a>
+</div>
+<div class="col-4 text-center">
+<a class="blog-header-logo text-dark" href="#">Produktivitäts-Tools</a>
+</div>
+<div class="col-4 d-flex justify-content-end align-items-center">
+<a class="text-muted" href="#" aria-label="Search">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false">
+<title>Search</title>
+<circle cx="10.5" cy="10.5" r="7.5"></circle>
+<path d="M21 21l-5.2-5.2"></path>
+</svg>
+</a>
+<a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+</div>
+</div>
+</header>
+<a aria-label="top" id="TOP"></a>
+<div class="row mb-2" id="teaserrow">
+<div class="col-md-6">
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+<div class="col p-4 d-flex flex-column position-static">
+<strong class="d-inline-block mb-2 text-primary">Daten</strong>
+<h3 class="mb-0">Flugzeuge beobachten</h3>
+<div class="mb-1 text-muted">23. September</div>
+<p class="card-text mb-auto">Den Fliegern nachzuschauen, ist für viele faszinierend. Aber was hat das Mit Daten zu tun?</p>
+<a href="blogpost-20220923-1.html" class="stretched-link">Weiterlesen</a>
+</div>
+<div class="col-auto d-none d-lg-block">
+<img src="images/airplane-200x250.jpg" alt="teaser image 1">
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+<div class="col p-4 d-flex flex-column position-static">
+<strong class="d-inline-block mb-2 text-primary">Business</strong>
+<h3 class="mb-0">Wohin geht es?</h3>
+<div class="mb-1 text-muted">12. Juli</div>
+<p class="card-text mb-auto">Die Zukunft des Arbeitsmarktes zwischen Job-Vernichtung und Personalknappheit</p>
+<a href="blogpost-20220712-1.html" class="stretched-link">Weiterlesen</a>
+</div>
+<div class="col-auto d-none d-lg-block">
+<img src="images/arbeitsmarkt.jpg" alt="teaser image2">
+</div>
+</div>
+</div>
+</div>
+</div>
+<main class="container">
+<div class="row">
+<div class="col-md-8 blog-main">
+<h3 class="pb-4 mb-4 font-italic border-bottom">
+Die neuesten Beiträge
+</h3>
+<h2 class="blog-post-title">Pandas: eine Python-Bibliothek, die es in sich hat</h2>
+<!--h6><span style="color:red">Meta Description ist auf Englisch*</span></h6-->
+<p class="blog-post-meta">3. September 2022 <a href="#">Mike</a></p>
+<p>Wer grössere Mengen von Daten analysiert oder transformiert, kommt um "Pandas" kaum herum. Diese Software-Bibliothek ist sozusagen das Schweizer Taschenmesser für Daten, die sich in Tabellenform darstellen lassen.</p>
+
+<p>Pandas verfügt über ein so umfangreiches Repertoire an Möglichkeiten, dass der Neuling rasch überfordert ist und sich nur schwer zurecht findet. Dem gegenüber steht jedoch der enorme Gewinn an Produktivität, sobald man auch nur die Anfangsgründer von Pandas gemeistert hat.</p>
+
+<p>Bevor man mit Pandas loslegt, stellt sich natürlich die Frage: <strong>Wie und wo installiere ich diese Software?</strong> Darauf gibt es nicht eine, sondern viele Antworten. Ich greife drei davon heraus:</p>
+
+<h6>&hybull; Installation von Python (ab Version 3.6.1) auf dem eigenen Windows-, Mac- oder Linux-Rechner</h6>
+<p>Diese Variante liegt nahe, wenn man Python-Programme entwickelt und Pandas lediglich eines von vielen Python-Modulen sein wird. Die offizielle Pandas-Website empfiehlte eine Installation im Rahmen von "Anaconda" <a href="https://pandas.pydata.org/docs/getting_started/install.html">https://pandas.pydata.org/docs/getting_started/install.html</a>, doch lässt sich Pandas auch mit "Pip" installieren.</p>
+
+<h6>&hybull; Verwendung eines Docker-Containers</h6>
+<p>Niels Borie stellt auf Github ein "<a href="https://github.com/nielsborie/machine-learning-environments">all-in-one Docker image for machine learning</a>" zur Verfügung. Dieses enthält unter anderem die Pakete <span class="kursiv">Numpy</span>, <span class="kursiv">Pandas</span>, <span class="kursiv">Matplotlib</span>, <span class="kursiv">SciPy</span>, <span class="kursiv">Seaborn</span> und <span class="kursiv">Yellowbrick</span>. Wer bereits ein wenig Erfahrung im Umgang mit Docker hat, kann dieses Image ohne Mühe installieren und hat dann in kürzester Zeit einen funktionierenden Jupyter Notebook Server zur Verfügung, auf dem sich mit Pandas arbeiten lässt. Docker läuft unter Windows ebenso wie unter Mac OS und Linux.</p>
+
+<h6>&hybull; Ausführen von Jupyter-Notebooks auf Binder oder Google Colab</h6>
+<p>Unter <a href="https://mybinder.org/">https://mybinder.org/</a> stellt "binder" unentgeltlich einen JupyterHub Server zur Verfügung, auf dem sich Docker-Container mit Python-, R- oder Julia-Code ausführen lassen. Alles, was es braucht, ist ein Github-Repository, aus dem sich "binder" die benötigten Dateien holt, um daraus einen Container zu erstellen und darin einen Jupyter Notebook Server zu starten. Im Minimum erforderlich sind ein Jupyter Notebook (<span class="kursiv">[Dateiname].ipynb</span>) und eine Datei mit dem Namen '<span class="kursiv">requirements.txt</span>', in der 'pandas' stehen muss, damit Pandas im Container installiert wird.</p>
+<p>Auch ohne Github-Repository, dafür mit einem Google-Konto, kann man unter <a href="https://colab.research.google.com/drive/">https://colab.research.google.com/drive/</a> Jupyter Notebooks erstellen und ausführen. Da Colab bereits alle gängigen Pakete für Arbeiten im Bereich Datenanalyse und Machine Learning installiert hat, reicht es, in den Python Code die Zeile "import pandas" bzw. "import pandas as pd" einzufügen.</p>
+
+<p>Hat man Python/Pandas installiert oder den entsprechenden Notebook-Server gestartet, steht einem eine grosse Zahl an Möglichkeiten offen. Als Beispiel dafür, was mit wenig Aufwand machbar ist sei hier die Aufgabe gestellt, drei CSV-Dateien, die von Google Analytics heruntergeladen wurden, zusammenzuführen und monatsweise zusammenzufassen.</p>
+
+<p>Ausgangsdaten:
+&hybull; users.csv
+&hybull; sessions.csv
+&hybull; pageviews.csv
+</p>
+<p>Die Daten sehen - in verkürzter Form - so aus:</p>
+<pre><code>
+Day Index,Users
+8/28/22,471
+8/29/22,512
+8/30/22,476
+8/31/22,423
+9/1/22,510
+9/2/22,409
+9/3/22,386
+...
+Day Index,Sessions
+8/28/22,502
+8/29/22,565
+8/30/22,499
+8/31/22,487
+9/1/22,553
+9/2/22,459
+9/3/22,407
+...
+Day Index,Pageviews
+8/28/22,810
+8/29/22,867
+8/30/22,685
+8/31/22,924
+9/1/22,774
+9/2/22,589
+9/3/22,618
+...
+</code></pre>
+<p>Was wir möchten, ist eine Tabelle, deren Zeilen diese Struktur haben:</p>
+<pre><code>
+Day Index,Users,Sessions,Pageviews
+8/28/22,471,502,810
+8/29/22,512,565,867
+...</code></pre>
+<p>Und schliesslich möchten wir noch die Zahlen für August und September summieren, so dass sich folgende Kreuztabelle ergibt:</p>
+<pre><code>
+Monat,Users,Sessions,Pageviews
+August,1882,2053,3286
+September,1305,1419,1981
+Total,3187,3472,5267
+</code></pre>
+<p>&nbsp;</p>
+<p>Mit Pandas lässt sich diese Aufgabe ohne grossen Programmieraufwand erledigen.</p>
+<pre><code>
+import pandas as pd
+
+files = ["Sessions","Users","Pageviews"]
+filename_template = '{} 20210101-20211014.csv'
+dataframes = []
+
+for i in range (0,len(files)):
+csv_data_file = filename_template.format(files[i])
+cols = ['Day Index',files[i]]
+df_tmp = pd.read_csv(csv_data_file,sep=',',header=0, usecols=cols, parse_dates=[0], index_col=0,thousands=',')
+df_tmp[files[i]] = df_tmp[files[i]].astype(int)
+dataframes += [df_tmp]
+
+df_merged = pd.merge(
+pd.merge(dataframes[0],
+dataframes[1],
+left_index=True,
+right_index=True
+),
+dataframes[2],
+left_index=True,
+right_index=True
+)
+
+df_merged['Year']  = df_merged.index.year.astype('category')
+df_merged['Month'] = df_merged.index.month.astype('category')
+
+pivot = pd.pivot_table(df_merged,
+index=['Month'],
+columns=['Year'],
+values=["Users","Sessions","Pageviews"],
+aggfunc = 'sum',
+fill_value=0, margins=False
+)
+</code></pre>
+<p>&nbsp;</p>
+<h5>Beispiel für eine Kreuztabelle (Pivot Table)</h5>
+<div>
+<style scoped="">
+.dataframe th,td {
+font-size:9pt;
+}
+.dataframe td {
+text-align:right;
+}
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
+
+.dataframe tbody tr th {
+vertical-align: top;
+}
+
+.dataframe thead tr th {
+text-align: left;
+}
+
+.dataframe thead tr:last-of-type th {
+text-align: right;
+}
+</style>
+<table class="dataframe">
+<thead>
+<tr>
+<th></th>
+<th colspan="2">Pageviews</th>
+<th colspan="2">Sessions</th>
+<th colspan="2">Users</th>
+</tr>
+<tr>
+<th>Year</th>
+<th>2021</th>
+<th>2022</th>
+<th>2021</th>
+<th>2022</th>
+<th>2021</th>
+<th>2022</th>
+</tr>
+<tr>
+<th>Month</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>1</th>
+<td>9245276</td>
+<td>2619203</td>
+<td>2390611</td>
+<td>261917</td>
+<td>1640285</td>
+<td>26189</td>
+</tr>
+<tr>
+<th>2</th>
+<td>9205413</td>
+<td>0</td>
+<td>2276599</td>
+<td>0</td>
+<td>1560994</td>
+<td>0</td>
+</tr>
+<tr>
+<th>3</th>
+<td>9973808</td>
+<td>0</td>
+<td>2466865</td>
+<td>0</td>
+<td>1679733</td>
+<td>0</td>
+</tr>
+<tr>
+<th>4</th>
+<td>9778438</td>
+<td>0</td>
+<td>2415951</td>
+<td>0</td>
+<td>1669745</td>
+<td>0</td>
+</tr>
+<tr>
+<th>5</th>
+<td>11028055</td>
+<td>0</td>
+<td>2615205</td>
+<td>0</td>
+<td>1778502</td>
+<td>0</td>
+</tr>
+<tr>
+<th>6</th>
+<td>11101271</td>
+<td>0</td>
+<td>2570095</td>
+<td>0</td>
+<td>1770023</td>
+<td>0</td>
+</tr>
+<tr>
+<th>7</th>
+<td>11697018</td>
+<td>0</td>
+<td>2668631</td>
+<td>0</td>
+<td>1811710</td>
+<td>0</td>
+</tr>
+<tr>
+<th>8</th>
+<td>9916761</td>
+<td>0</td>
+<td>2713303</td>
+<td>0</td>
+<td>1906870</td>
+<td>0</td>
+</tr>
+<tr>
+<th>9</th>
+<td>10574801</td>
+<td>0</td>
+<td>2690550</td>
+<td>0</td>
+<td>1916595</td>
+<td>0</td>
+</tr>
+<tr>
+<th>10</th>
+<td>5378804</td>
+<td>0</td>
+<td>1307165</td>
+<td>0</td>
+<td>946210</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>Hätten wir es nur mit ein paar wenigen Datensätzen zu tun, könnten wir die Auswertung von Hand auf einem Blatt Papier schneller erledigen; bei bis zu 1000 Datensätzen lägen wir mit Excel oder Google Sheets gut im Rennen, doch wenn wir es mit einer grösseren Menge an Daten zu tun haben, ist Pandas der Favorit.</p>
+</div>
+<aside class="col-md-4 blog-sidebar">
+<div class="p-4 mb-3 bg-light rounded">
+<h4 class="font-italic">Kontakt</h4>
+<p class="mb-0">Calya Consult GmbH<br>6300 Zug, Schweiz<br>Telefon +41 41 743 09 09</p>
+</div>
+<div class="p-4">
+<h4 class="font-italic">Archiv</h4>
+<ol class="list-unstyled mb-0">
+<li class="archli"><a href="blogpost-20220923-1.html">blogpost-20220923-1.html</a></li>
+<li class="archli"><a href="blogpost-20220712-1.html">blogpost-20220712-1.html</a></li>
+<li class="archli"><a href="blogpost-20220707-1.html">blogpost-20220707-1.html</a></li>
+<li class="archli"><a href="blogpost-20220525-1.html">blogpost-20220525-1.html</a></li>
+<li class="archli"><a href="blogpost-20220519-1.html">blogpost-20220519-1.html</a></li>
+<li class="archli"><a href="blogpost-20200902-1.html">blogpost-20200902-1.html</a></li>
+<li class="archli"><a href="blogpost-20200911-1.html">blogpost-20200911-1.html</a></li>
+<li class="archli"><a href="blogpost-20200828-1.html">blogpost-20200828-1.html</a></li>
+<li class="archli"><a href="blogpost-20200830-1.html">blogpost-20200830-1.html</a></li>
+<li><a href="september-2020.html">September 2020</a></li>
+<li><a href="august-2020.html">August 2020</a></li>
+</ol>
+</div>
+<div class="p-4">
+<h4 class="font-italic">Anderswo</h4>
+<ol class="list-unstyled">
+<li><a href="#">GitHub</a></li>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Facebook</a></li>
+</ol>
+</div>
+</aside>
+<!-- /.blog-sidebar -->
+</div>
+<!-- /.row -->
+</main>
+<!-- /.container -->
+<footer class="blog-footer">
+<p class=".big">Blog by <a href="https://calyaconsult.ch">Calya Consult GmbH</a></p>
+<p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+<p>
+<a href="#TOP">Back to top</a>
+</p>
+</footer>
+</body></html>
